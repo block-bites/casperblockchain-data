@@ -25,4 +25,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: curl --header "secret:${{ secrets.secret }}" https://casperblockchain.herokuapp.com/api/update
+        run: curl --header "secret:${{ secrets.SECRET }}" https://casperblockchain.herokuapp.com/api/update
