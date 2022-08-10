@@ -25,8 +25,8 @@ jobs:
 
       - name: Run API Update
         run: curl --header "secret:${{ secrets.SECRET }}" https://casperblockchain.herokuapp.com/api/update
-      - name: Sleep
-        run: sleep 60
+      #- name: Sleep
+      #  run: sleep 60
       - name: Run Regresh Gatsby
         run: curl -X POST https://webhook.gatsbyjs.com/hooks/data_source/publish/0331c161-911e-4c3a-944b-547de1e756d5
 
