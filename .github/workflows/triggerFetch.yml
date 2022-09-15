@@ -28,6 +28,6 @@ jobs:
       #- name: Sleep
       #  run: sleep 60
       - name: Run Regresh Gatsby
-        run: curl -X POST https://webhook.gatsbyjs.com/hooks/data_source/publish/0331c161-911e-4c3a-944b-547de1e756d5
+        run: curl -X POST https://webhook.gatsbyjs.com/hooks/data_source/publish/0331c161-911e-4c3a-944b-${{ secrets.GATSBY_ID }}
 
      
